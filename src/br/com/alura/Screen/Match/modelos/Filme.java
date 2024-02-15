@@ -3,16 +3,15 @@ package br.com.alura.Screen.Match.modelos;
 import br.com.alura.Screen.Match.modelos.Calculos.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {
-    private String diretor;
+    private String movieDirector;
 
     public String getDiretor() {
-        return diretor;
+        return movieDirector;
     }
 
     public void setDiretor(String diretor) {
-        this.diretor = diretor;
+        this.movieDirector = movieDirector;
     }
-
     @Override
     public int getClassificacao() {
         return (int) pegaMedia() / 2;

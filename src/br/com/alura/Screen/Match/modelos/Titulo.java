@@ -1,59 +1,58 @@
 package br.com.alura.Screen.Match.modelos;
 public class Titulo {
-    private String nome;
-    private int anoDeLancamento;
-    private boolean incluidoNoPlano;
-    private double somaDasAvaliacoes;
-    private int totalDeAvaliacoes;
-    private int duracaoEmMinutos;
+    private String name;
+    private int releaseYear;
+    private boolean incluidePlan;
+    private double sumofAvaliations;
+    private int totalofAvaliations;
+    private int duratiioninMinutes;
 
     public String getNome() {
-        return nome;
+        return name;
     }
 
     public int getAnoDeLancamento() {
-        return anoDeLancamento;
+        return releaseYear;
     }
 
     public boolean isIncluidoNoPlano() {
-        return incluidoNoPlano;
+        return incluidePlan;
     }
 
     public int getDuracaoEmMinutos() {
-        return duracaoEmMinutos;
+        return duratiioninMinutes;
     }
 
     public int getTotalDeAvaliacoes() {
-        return totalDeAvaliacoes;
+        return totalofAvaliations;
     }
-
     public void setNome(String nome) {
-        this.nome = nome;
+        this.name = name;
     }
 
     public void setAnoDeLancamento(int anoDeLancamento) {
-        this.anoDeLancamento = anoDeLancamento;
+        this.releaseYear = releaseYear;
     }
 
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-        this.incluidoNoPlano = incluidoNoPlano;
+        this.incluidePlan = incluidePlan;
     }
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
-        this.duracaoEmMinutos = duracaoEmMinutos;
+        this.duratiioninMinutes = duratiioninMinutes;
     }
 
     public void exibeFichaTecnica(){
-        System.out.println("Nome do filme: " + nome);
-        System.out.println("Ano de lançamento: " + anoDeLancamento);
+        System.out.println("Nome do filme: " + name);
+        System.out.println("Ano de lançamento: " + releaseYear);
     }
 
-    public void avalia(double nota){
-        somaDasAvaliacoes += nota;
-        totalDeAvaliacoes++;
+    public void avalia(double note){
+        sumofAvaliations += note;
+        totalofAvaliations++;
     }
 
     public double pegaMedia(){
-        return somaDasAvaliacoes / totalDeAvaliacoes;
+        return sumofAvaliations / totalofAvaliations;
     }
 }
