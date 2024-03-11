@@ -1,9 +1,8 @@
 package br.com.alura.Screen.Match.modelos.Calculos;
-import br.com.alura.Screen.Match.modelos.Calculos.CalculadoraDeTempo;
 import br.com.alura.Screen.Match.modelos.Filme;
-import br.com.alura.Screen.Match.modelos.Serie;
 import br.com.alura.Screen.Match.modelos.Titulo;
-
+import br.com.alura.Screen.Match.modelos.Serie;
+import br.com.alura.Screen.Match.modelos.Episodio;
 public class CalculadoraDeTempo {
     private int tempoTotal;
 
